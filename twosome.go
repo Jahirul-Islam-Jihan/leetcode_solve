@@ -6,10 +6,10 @@ import (
 
 func twoSum(nums []int, target int) []int {
     for i := 0; i < len(nums); i++ {
-        for j := i + 1; j < len(nums); j++ { // Start j from i + 1
-            sum := nums[i] + nums[j] // Declare sum
+        for j := i + 1; j < len(nums); j++ { 
+            sum := nums[i] + nums[j] 
             if sum == target {
-                return []int{i, j} // Return indices as a slice
+                return []int{i, j} 
             }
         }
     }
